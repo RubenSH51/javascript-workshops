@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Taller #4</title>
+	<link rel="stylesheet" href="./workshop4.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	
+
+	<header>
+		<h3>Taller #4</h3>
+		<h1>Análisis salarial</h1>
+		<a href="./index.html">HOME</a>
+	</header>
+
+	<main>
+		<div class="title">
+			<div class="logo">
+				<img src="./assets/icons/cuadrado.png" alt="">
+			</div>
+			<div class="content">
+				<h2>Cálculos</h2>
+			</div>
+		</div>
+		<section class='sections-container'>
+			<section class="forms">
+				<form action="">
+					<label for="agregar">Agrega un <strong>nuevo valor</strong> a la lista.</label>
+					<input type="number" id='agregar'>
+					<button type='button' onclick='addElement()'>AGREGAR A LA LISTA</button>
+
+					<label for="quitar">Elimina un <strong>número</strong> de la lista.</label>
+					<input type="number" id='quitar'>
+					<button type='button' onclick='removeElement()'>QUITAR DE LA LISTA</button>
+
+					<label for="">Lista precargada para testing.</label>
+					<button type='button' onclick='cargarLista()'>USAR LISTA PRECARGADA</button>
+
+					<label for="">Borrar complementa la lista.</label>
+					<button type='button' onclick='vaciarLista()'>VACIAR LISTA</button>
+
+				</form>
+			</section>
+
+			<section class="list-container">
+				<h3><u>Lista de elementos</u></h3>
+				<ul id="list">
+					
+				</ul>
+			</section>
+
+			<section class="operations">
+
+				
+				<button type='button' onclick="calcularPromedio()">Calcular promedio</button>
+			
+
+				<button type='button' onclick="calcularMediana()">Calcular mediana</button>
+			
+
+				<button type='button' onclick="calcularModa()">Calcular moda</button>
+
+				<button type='button' onclick="calcularTop10()">Calcular Top10%</button>
+				
+
+			</section>
+		</section>
+	</main>
+
+
+
+
+
+
+
+	<footer>
+
+		<section class='left'>
+
+			<p><a href="./index.html">HOME</a></p>
+			<ul>
+				<li><a href="#">Linkedin <span></span></a></li>
+				<li><a href="#">Github <span></span></a></li>
+				<li><a href="#">Twitter <span></span></a></li>
+			</ul>
+		</section>
+
+		<section class='right'>
+			<div>
+				<img src="./assets/icons/sh.png" alt="">
+			</div>
+		</section>
+
+	</footer>
+
+	<script src='./taller4-salarios.js'></script>
+	<script src='./taller4-analisis.js'></script>
+</body>
+</html>

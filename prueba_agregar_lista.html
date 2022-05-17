@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		*
+		{
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		main
+		{
+			width: 100%;
+		}
+		main input
+		{
+			width: 90%;
+			height: 25px;
+			margin:  25px 0;
+		}
+
+		main button
+		{
+			width: 90%;
+			height: 25px;
+		}
+
+		main ul li
+		{
+			list-style: none;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<main>
+		<h2>Agrega un número a la lista</h2>
+		<input type="number" id='input'>
+		<button type="button" onclick='addElement()'>Agregar número</button>
+
+		<h3>Lista:</h3>
+		<ul id='list'>
+			
+		</ul>
+	</main>
+	
+
+
+
+	<script>
+
+		const lista = [];
+		let counter = 0;
+
+		function addElement() 
+		{
+			counter += 1;
+			const numero = document.getElementById('input').value;
+			lista.push(numero);
+
+			let ul = document.getElementById("list");
+			let li = document.createElement("li");
+
+  			li.innerHTML = '<strong>'+counter+'- </strong>'+numero;
+  			ul.appendChild(li);
+
+  			document.getElementById('input').value = '';
+
+		}
+
+
+
+	</script>
+</body>
+</html>

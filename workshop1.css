@@ -1,0 +1,349 @@
+/*inspirado en el trabajo de https://lucasfrezzini.github.io/platzi-curso-practico-javascript/ */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HEADER*/
+
+header
+{
+	height: 150px;
+	width: 100%;
+	background-color: #150C0C;
+	color:  #F0C90D;
+}
+
+header a
+{
+	display:  none;
+}
+
+
+header h3
+{
+	font-size: 1.5rem;
+	text-align: center;
+	padding-top: 50px;
+}
+
+
+header h1
+{
+	font-size: 3rem;
+	text-align: center;
+}
+
+header a
+{
+	position: fixed;
+	top: 22px;
+	right: 19px;
+	transform:  rotate(-90deg) translateX(0);
+	/*display: inline-block;*/
+	padding: 15px 30px 15px 15px;
+	font-size: 3rem;
+	font-weight: bold;
+	color: black;
+	background-color: #F0C90D;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+header a:hover
+{
+	color: #F0C90D;
+	background-color: white;
+	top: 35px;
+	padding: 18px 30px 18px 15px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN*/
+
+main
+{
+	width: 100%;
+	height: auto;
+	background-color: #BBCDF7;
+}
+
+
+main .title
+{
+	display: flex;
+	width: 100%;
+}
+
+main .title .logo
+{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .title .logo img
+{
+	min-width: 50px;
+	max-width: 80px;
+	width: 50%;
+	height:auto;
+}
+
+main .title .content
+{
+	width: 60%;
+	/*height: 50px;*/
+	display: flex;
+	align-items: center;
+}
+
+main .title .content h2
+{
+	font-size: 3rem;
+}
+
+/* 				>>>>>>>>>>>> FORM*/
+
+main .figura
+{
+	padding-top: 10px;
+	margin-bottom: 25px;
+}
+
+main .forms form
+{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .forms form p
+{
+	font-size: 1.6rem;
+	margin-bottom: 5px;
+}
+
+main .forms form input
+{
+	margin-bottom: 15px;
+	width: 80%;
+	max-width: 550px;
+	min-width: 250px;
+	height: 25px;
+}
+
+main .forms form button
+{
+	width: 80%;
+	max-width: 550px;
+	min-width: 250px;
+	height: 25px;
+	margin-bottom: 5px;
+}
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER*/
+
+
+footer
+{
+	width: 100%;
+	height: 100px;
+	/*background-color: #201F54;*/
+	background-color: black;
+	color:  white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer section
+{
+	width: 40%;
+	/*margin-top: 15px;*/
+}
+
+footer .left p
+{
+	font-size: 1.5rem;
+	margin-bottom: 5px;
+	text-decoration: underline;
+}
+
+footer .left p a
+{
+	color:  white;
+
+}
+
+footer .left ul li
+{
+	list-style: none;
+	font-size: 1.2rem;
+	line-height: 20px;
+}
+
+footer .left ul li a
+{
+	text-decoration: none;
+	color:  white;
+}
+
+footer .right
+{
+	display: flex;
+	justify-content: center;
+}
+
+footer .right div
+{
+	width: 75px;
+	height: auto;
+	background-color: #DED0D0;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+
+footer .right div img
+{
+	width: 75%;
+}
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIAS */ 
+
+
+@media (min-width: 550px)
+{
+
+	header a
+	{
+		display: inline-block;
+	}
+
+
+	main .figura
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main .figura .title
+	{
+		width: 80%;
+	}
+
+	main .figura .forms
+	{
+		width: 90%;
+	}
+
+
+
+
+
+
+
+	footer .left ul
+	{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	footer .left p
+	{
+		display:  none;
+	}
+
+	footer .left ul li:nth-child(1) a span
+	{
+		background: url('./assets/icons/linkedin4.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+	}
+
+	footer .left ul li:nth-child(2) a span
+	{
+		background: url('./assets/icons/github2.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+	}
+
+	footer .left ul li:nth-child(3) a span
+	{
+		background: url('./assets/icons/twitter2.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+	}
+
+	footer .left ul li a
+	{
+		color:  black;
+	}
+
+	footer .left ul li a span:hover
+	{
+		transform: rotate(360deg) scale(1.2);
+		transition: all 0.5s;
+	}
+
+	footer .right img:hover
+	{
+		transform: rotate(360deg) scale(0.8);
+		transition: all 0.5s;
+	}
+}
+
+@media (min-width: 768px)
+{
+	main
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main .figura
+	{
+		border:  1px solid black;
+		margin: 0;
+		padding-bottom: 20px;
+	}
+
+}
